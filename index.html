@@ -473,8 +473,8 @@ html[data-playing="true"] .mini-bar .mp-btn .i-pause{display:block}
 
       <div class="meta-row">
         <div class="meta">
-          <div class="t" data-bind="title">John Wayne</div>
-          <div class="a" data-bind="artist">Cigarettes After Sex</div>
+          <div class="t" data-bind="title">Fake Plastic Trees</div>
+          <div class="a" data-bind="artist">Radiohead</div>
         </div>
         <div class="meta-actions">
           <button class="icon-pill" id="favBtn" type="button" aria-pressed="true" aria-label="Favorite">
@@ -488,12 +488,12 @@ html[data-playing="true"] .mini-bar .mp-btn .i-pause{display:block}
 
       <div class="tag-pill">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-        <span data-bind="genre">Dream Pop &rsaquo;</span>
+        <span data-bind="genre">Alternative &rsaquo;</span>
       </div>
 
       <div class="am-seek">
         <div class="seek" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i class="fill"></i><b class="knob"></b></div>
-        <div class="am-times"><span data-t="cur">0:00</span><span data-t="rem">-4:18</span></div>
+        <div class="am-times"><span data-t="cur">0:00</span><span data-t="rem">-4:50</span></div>
       </div>
 
       <div class="am-ctrls">
@@ -607,7 +607,7 @@ html[data-playing="true"] .mini-bar .mp-btn .i-pause{display:block}
       <div class="seekrow">
         <span data-t="cur">0:00</span>
         <div class="seek" role="slider" tabindex="0" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i class="fill"></i><b class="knob"></b></div>
-        <span data-t="dur">4:18</span>
+        <span data-t="dur">4:50</span>
       </div>
     </div>
   </div>
@@ -624,7 +624,7 @@ html[data-playing="true"] .mini-bar .mp-btn .i-pause{display:block}
           <div class="pres-info">
             <div class="pt" data-f="title" data-bind="title"></div>
             <div class="pa" data-f="artist" data-bind="artist"></div>
-            <div class="pbar-row" data-f="time"><span data-t="cur">0:00</span><div class="pbar"><i></i></div><span data-t="dur">4:18</span></div>
+            <div class="pbar-row" data-f="time"><span data-t="cur">0:00</span><div class="pbar"><i></i></div><span data-t="dur">4:50</span></div>
           </div>
         </div>
       </div>
@@ -726,6 +726,71 @@ const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
 /* ---------- tracks with real audio, user covers + time-synced lyrics ---------- */
 const tracks = [
   {
+    title: 'Fake Plastic Trees',
+    artist: 'Radiohead',
+    genre: 'Alternative ›',
+    audio: 'Radiohead_-_Fake_Plastic_Trees_(mp3.pm).aac',
+    img: 'cover-fake-plastic-trees.webp',
+    dur: 290,
+    pal: ['#7c5333', '#2a1c12', '#52341f', '#0a0604'],
+    pos: [24, 18, 80, 70, 68, 14],
+    lyrics: [
+      { t: 10.5, end: 16.5, text: 'A green plastic watering can' },
+      { t: 17.0, end: 24.0, text: 'For a fake Chinese rubber plant' },
+      { t: 25.0, end: 32.5, text: 'In the fake plastic earth' },
+      { t: 38.0, end: 44.5, text: 'That she bought from a rubber man' },
+      { t: 45.0, end: 52.0, text: 'In a town full of rubber plans' },
+      { t: 52.5, end: 60.5, text: 'To get rid of itself' },
+      { t: 62.0, end: 70.0, text: 'It wears her out, it wears her out' },
+      { t: 72.0, end: 80.5, text: 'It wears her out, it wears her out' },
+      { t: 86.0, end: 93.0, text: 'She lives with a broken man' },
+      { t: 93.5, end: 101.0, text: 'A cracked polystyrene man' },
+      { t: 101.5, end: 109.5, text: 'Who just crumbles and burns' },
+      { t: 114.5, end: 121.5, text: 'He used to do surgery' },
+      { t: 122.0, end: 129.5, text: 'For girls in the eighties' },
+      { t: 130.0, end: 138.0, text: 'But gravity always wins' },
+      { t: 140.0, end: 148.5, text: 'And it wears him out, it wears him out' },
+      { t: 150.0, end: 158.5, text: 'It wears him out, it wears him out' },
+      { t: 166.0, end: 174.0, text: 'She looks like the real thing' },
+      { t: 174.5, end: 182.5, text: 'She tastes like the real thing' },
+      { t: 183.0, end: 192.0, text: 'My fake plastic love' },
+      { t: 196.5, end: 204.0, text: 'But I can’t help the feeling' },
+      { t: 204.5, end: 212.5, text: 'I could blow through the ceiling' },
+      { t: 213.0, end: 222.0, text: 'If I just turn and run' },
+      { t: 224.0, end: 233.0, text: 'And it wears me out, it wears me out' },
+      { t: 234.5, end: 244.0, text: 'It wears me out, it wears me out' }
+    ]
+  },
+  {
+    title: 'For the First Time',
+    artist: 'Mac DeMarco',
+    genre: 'Indie ›',
+    audio: 'Mac_DeMarco_-_For_The_First_Time_2017_-_This_Old_Dog_(mp3.pm).mp3',
+    img: 'cover-first-time.webp',
+    dur: 182,
+    pal: ['#7a6c24', '#29240c', '#574d18', '#090803'],
+    pos: [78, 20, 22, 74, 52, 50],
+    lyrics: [
+      { t: 8.0, end: 14.5, text: 'Why she’s been away' },
+      { t: 15.0, end: 22.0, text: 'Living day to day’s been tough' },
+      { t: 25.0, end: 31.5, text: 'Found her at my side' },
+      { t: 32.0, end: 39.5, text: 'Simply being alive’s been rough' },
+      { t: 42.0, end: 49.0, text: 'No, she won’t be gone forever' },
+      { t: 49.5, end: 57.5, text: 'There are times I find it feels that way' },
+      { t: 60.0, end: 67.5, text: 'And I’m not trying to forget her' },
+      { t: 68.0, end: 77.5, text: 'Just understand how I’ll be feeling on that day' },
+      { t: 78.5, end: 87.5, text: 'It’s just like seeing her for the first time again' },
+      { t: 95.0, end: 104.5, text: 'It’s just like seeing her for the first time again' },
+      { t: 112.0, end: 119.0, text: 'Times she’s not around' },
+      { t: 119.5, end: 127.0, text: 'Somewhere out of town’s been hard' },
+      { t: 130.0, end: 137.0, text: 'Sometimes it’s so hard' },
+      { t: 137.5, end: 145.5, text: 'Finding time to work it out this far' },
+      { t: 148.0, end: 156.5, text: 'No, I know she’s coming home soon' },
+      { t: 157.0, end: 165.5, text: 'There are times I find it hard to feel that way' },
+      { t: 166.5, end: 179.5, text: 'It’s just like seeing her for the first time again' }
+    ]
+  },
+  {
     title: 'John Wayne',
     artist: 'Cigarettes After Sex',
     genre: 'Dream Pop ›',
@@ -733,7 +798,7 @@ const tracks = [
     img: 'cover-cas.webp',
     dur: 258,
     pal: ['#52525b', '#18181b', '#3f3f46', '#030304'],
-    pos: [24, 18, 80, 70, 68, 14],
+    pos: [52, 18, 20, 78, 82, 68],
     lyrics: [
       { t: 31.2, end: 36.2, text: 'He’s got so much love for her' },
       { t: 36.4, end: 42.5, text: 'But he doesn’t know what to do' },
@@ -759,42 +824,6 @@ const tracks = [
       { t: 230.2, end: 236.5, text: 'Always facing the world' },
       { t: 236.8, end: 243.0, text: 'Or chasing the girl' },
       { t: 243.8, end: 256.0, text: 'Baby, he’s got to be crazy' }
-    ]
-  },
-  {
-    title: 'K.',
-    artist: 'Cigarettes After Sex',
-    genre: 'Dream Pop ›',
-    audio: 'Cigarettes_After_Sex_-_K._(mp3.pm).mp3',
-    img: 'cover-cas.webp',
-    dur: 317,
-    pal: ['#52525b', '#18181b', '#3f3f46', '#030304'],
-    pos: [28, 22, 76, 68, 62, 18],
-    lyrics: [
-      { t: 31.5, end: 40.5, text: 'I remember when I first noticed that you liked me back' },
-      { t: 43.0, end: 53.0, text: 'We were sitting down in a restaurant waiting for the check' },
-      { t: 55.2, end: 64.5, text: 'We had made love earlier that day with no strings attached' },
-      { t: 67.0, end: 78.5, text: 'But I could tell that something had changed how you looked at me then' },
-      { t: 79.0, end: 85.0, text: 'Kristen, come right back' },
-      { t: 85.5, end: 91.0, text: 'I’ve been waiting for you' },
-      { t: 91.5, end: 97.5, text: 'To slip back in bed' },
-      { t: 98.0, end: 103.5, text: 'When you light the candle' },
-      { t: 127.5, end: 136.5, text: 'And on the Lower East Side you’re dancing with me now' },
-      { t: 139.2, end: 148.5, text: 'And I’m taking pictures of you with flowers on the wall' },
-      { t: 151.0, end: 160.5, text: 'Think I like you best when you’re dressed in black from head to toe' },
-      { t: 163.0, end: 174.5, text: 'Think I like you best when you’re just with me and no one else' },
-      { t: 175.0, end: 181.0, text: 'Kristen, come right back' },
-      { t: 181.5, end: 187.0, text: 'I’ve been waiting for you' },
-      { t: 187.5, end: 193.5, text: 'To slip back in bed' },
-      { t: 194.0, end: 200.0, text: 'When you light the candle' },
-      { t: 223.5, end: 232.5, text: 'And I’m kissing you lying in my room' },
-      { t: 235.5, end: 244.5, text: 'Holding you until you fall asleep' },
-      { t: 247.5, end: 256.5, text: 'And it’s just as good as I knew it would be' },
-      { t: 259.5, end: 270.0, text: 'Stay with me, I don’t want you to leave' },
-      { t: 271.0, end: 277.0, text: 'Kristen, come right back' },
-      { t: 277.5, end: 283.0, text: 'I’ve been waiting for you' },
-      { t: 283.5, end: 289.5, text: 'To slip back in bed' },
-      { t: 290.0, end: 298.0, text: 'When you light the candle' }
     ]
   },
   {
@@ -826,42 +855,6 @@ const tracks = [
       { t: 158.0, end: 164.0, text: 'My pure desire' },
       { t: 165.0, end: 172.0, text: 'My pure desire' },
       { t: 173.0, end: 180.0, text: 'My pure desire' }
-    ]
-  },
-  {
-    title: 'Sweet',
-    artist: 'Cigarettes After Sex',
-    genre: 'Dream Pop ›',
-    audio: 'Sweet_-_Cigarettes_After_Sex_(mp3.pm).mp3',
-    img: 'cover-cas.webp',
-    dur: 291,
-    pal: ['#52525b', '#18181b', '#3f3f46', '#030304'],
-    pos: [52, 18, 20, 78, 82, 68],
-    lyrics: [
-      { t: 15.8, end: 22.8, text: 'Watching the video that you sent me' },
-      { t: 23.5, end: 31.2, text: 'The one where you’re showering with wet hair dripping' },
-      { t: 31.8, end: 39.2, text: 'You know that I’m obsessed with your body' },
-      { t: 39.8, end: 47.0, text: 'But it’s the way you smile that does it for me' },
-      { t: 47.5, end: 54.5, text: 'It’s so sweet, knowing that you love me' },
-      { t: 55.2, end: 62.5, text: 'Though we don’t need to say it to each other, sweet' },
-      { t: 63.2, end: 70.5, text: 'Knowing that I love you, and running my fingers through your hair' },
-      { t: 71.2, end: 77.5, text: 'It’s so sweet' },
-      { t: 79.8, end: 87.0, text: 'Watching the video where you’re lying' },
-      { t: 87.8, end: 95.0, text: 'In your red lingerie ten times nightly' },
-      { t: 95.8, end: 103.0, text: 'You know I think your skin’s the perfect color' },
-      { t: 103.8, end: 111.0, text: 'But it’s always your eyes that pull me under' },
-      { t: 111.5, end: 118.5, text: 'It’s so sweet, knowing that you love me' },
-      { t: 119.2, end: 126.5, text: 'Though we don’t need to say it to each other, sweet' },
-      { t: 127.2, end: 134.5, text: 'Knowing that I love you, and running my fingers through your hair' },
-      { t: 135.2, end: 141.5, text: 'It’s so sweet' },
-      { t: 175.8, end: 183.5, text: 'And I would gladly break it, I would gladly break my heart for you' },
-      { t: 184.0, end: 191.5, text: 'And I would gladly break it, I would gladly break my heart for you' },
-      { t: 192.0, end: 199.5, text: 'And I would gladly break it, I would gladly break my heart for you' },
-      { t: 200.0, end: 207.5, text: 'And I would gladly break it, I would gladly break my heart for you' },
-      { t: 208.0, end: 215.0, text: 'It’s so sweet, knowing that you love me' },
-      { t: 215.8, end: 223.0, text: 'Though we don’t need to say it to each other, sweet' },
-      { t: 223.8, end: 231.0, text: 'Knowing that I love you, and running my fingers through your hair' },
-      { t: 231.8, end: 239.5, text: 'It’s so sweet' }
     ]
   }
 ];
@@ -1244,10 +1237,10 @@ const FORMATS = {
   DSD:  { head: '1-bit, very high rate', text: 'Direct Stream Digital is a 1-bit stream at megahertz rates. DSD64 runs at 2.8224 MHz.' }
 };
 const LIB = [
-  { idx: 0, n: 'John Wayne', a: 'Cigarettes After Sex', f: 'FLAC', q: '24-bit / 96 kHz', src: 'local', img: 'cover-cas.webp' },
-  { idx: 1, n: 'K.', a: 'Cigarettes After Sex', f: 'ALAC', q: '24-bit / 48 kHz', src: 'local', img: 'cover-cas.webp' },
-  { idx: 2, n: 'Isolation', a: 'gloomhush', f: 'WAV', q: '16-bit / 44.1 kHz', src: 'local', img: 'cover-isolation.webp' },
-  { idx: 3, n: 'Sweet', a: 'Cigarettes After Sex', f: 'MP3', q: '320 kbps', src: 'local', img: 'cover-cas.webp' }
+  { idx: 0, n: 'Fake Plastic Trees', a: 'Radiohead', f: 'FLAC', q: '24-bit / 96 kHz', src: 'local', img: 'cover-fake-plastic-trees.webp' },
+  { idx: 1, n: 'For the First Time', a: 'Mac DeMarco', f: 'ALAC', q: '24-bit / 48 kHz', src: 'local', img: 'cover-first-time.webp' },
+  { idx: 2, n: 'John Wayne', a: 'Cigarettes After Sex', f: 'MP3', q: '320 kbps', src: 'local', img: 'cover-cas.webp' },
+  { idx: 3, n: 'Isolation', a: 'gloomhush', f: 'WAV', q: '16-bit / 44.1 kHz', src: 'local', img: 'cover-isolation.webp' }
 ];
 let fFilter = 'ALL', offline = false;
 const fChips = $('#fChips'), fInfo = $('#fInfo'), libEl = $('#lib'), libFoot = $('#libFoot');
